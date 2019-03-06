@@ -4,6 +4,9 @@
 
 https://hub.docker.com/search/?q=&type=edition&offering=enterprise&operating_system=linux
 
+## Get Trial Docker EE for AWS
+https://hub.docker.com/editions/enterprise/docker-ee-aws?tab=description
+
 It would be your 30day trial
 
 
