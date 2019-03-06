@@ -40,7 +40,7 @@ yum install -y docker-ee-18.09.2-3.el7.x86_64.rpm docker-ee-cli-18.09.2-3.el7.x8
 
 ## Tune Docker EE Engine (All Nodes)
 
-[Kernel Tuning](https://github.com/clemenko/best_practices#kernel)
+[Kernel Tuning](https://github.com/ssheff/docker/blob/master/Kernel)
 
 ```bash
 echo "vm.swappiness=0" >> /etc/sysctl.conf # turn off swapping unless necessary
@@ -55,9 +55,8 @@ echo "fs.inotify.max_user_instances=8192" >> /etc/sysctl.conf # monitor file sys
 echo "fs.inotify.max_user_watches=1048576" >> /etc/sysctl.conf # monitor file system events
 sysctl -p
 ```
-Details on all of these items available [here](tuning.md)
 
-[Daemon Tuning Recommendations](https://github.com/clemenko/best_practices#daemon-)
+[Daemon Tuning Recommendations](https://github.com/ssheff/docker/blob/master/daemon)
 
 ```bash
 docker plugin disable docker/telemetry:1.0.0.linux-x86_64-stable
