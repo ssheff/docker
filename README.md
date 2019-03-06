@@ -1,4 +1,4 @@
-# docker
+# Installing and configuring Docker on AWS
 
 ## Get Trial Docker EE for Linux:
 
