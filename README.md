@@ -16,15 +16,16 @@ https://storebits.docker.com/ee/XXXXXXXXX/<sub-XXXXXXXXXXXXXXXXXXXXXXXXXX>
 
 ## Node Sizing and Port Requirements
 
-UCP - 4 core(vcpu) x 16GB Ram X 100GB free in /var/lib/ for kubelet and docker. Increase CPU and RAM as cluster grows
+* UCP - 4 core(vcpu) x 16GB Ram X 100GB free in /var/lib/ for kubelet and docker. Increase CPU and RAM as cluster grows
 
-DTR - 4 core(vcpu) x 16GB Ram X 250GB free in /var/lib/ for kubelet and docker. Increase CPU and RAM to improve CVE Scanning.
+* DTR - 4 core(vcpu) x 16GB Ram X 250GB free in /var/lib/ for kubelet and docker. Increase CPU and RAM to improve CVE Scanning.
 
-Storage is dependent on if external storage for DTR is used.
+* Storage is dependent on if external storage for DTR is used.
 
-Worker - 4 core(vcpu) x 16GB Ram X 100GB free in /var/lib/ for kubelet and docker. Increase as container workload increases.
+* Worker - 4 core(vcpu) x 16GB Ram X 100GB free in /var/lib/ for kubelet and docker. Increase as container workload increases.
 
 Make sure the ports are open between ALL nodes.
-https://docs.docker.com/ee/ucp/admin/install/system-requirements/
+
+[Docker reqs] (https://docs.docker.com/ee/ucp/admin/install/system-requirements/)
 
 ##
