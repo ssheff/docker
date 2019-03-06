@@ -28,4 +28,13 @@ Make sure the ports are open between ALL nodes.
 
 [Docker reqs] (https://docs.docker.com/ee/ucp/admin/install/system-requirements/)
 
-##
+## Installing Docker EE Engine on all nodes
+
+If you are online follow the [Centos Engine Install docs](https://docs.docker.com/install/linux/docker-ee/centos/#set-up-the-repository).
+
+If you are offline, download the RPMs to the node or setup a local http/nfs repo. OR local install with:
+
+```bash
+yum install -y docker-ee-18.09.2-3.el7.x86_64.rpm docker-ee-cli-18.09.2-3.el7.x86_64.rpm containerd.io-1.2.2-3.3.el7.x86_64.rpm
+```
+
